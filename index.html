@@ -48,10 +48,36 @@
       transform: scale(1.1);
     }
     .telegram-link {
+      display: inline-block;
       margin-top: 20px;
       font-size: 20px;
       color: white;
-      text-decoration: underline;
+      text-decoration: none;
+      padding: 10px 30px;
+      border-radius: 25px;
+      background: linear-gradient(90deg, #0088cc, #00c6ff);
+      box-shadow: 0 4px 15px rgba(0, 136, 204, 0.5);
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s ease-in-out;
+    }
+    .telegram-link::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.3);
+      transform: skewX(-45deg);
+      transition: left 0.5s;
+    }
+    .telegram-link:hover::before {
+      left: 100%;
+    }
+    .telegram-link:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(0, 136, 204, 0.8);
     }
   </style>
 </head>
@@ -59,15 +85,13 @@
   <div class="container">
     <a href="https://instagram.com/nishkarsh_pratap_singh" class="instagram-button">
       <img src="IMG_20241208_150347_692.webp" alt="Instagram Logo">
-    𝒇𝒐𝒍𝒍𝒐𝒘 𝑵𝒊𝒔𝒉𝒌𝒂𝒓𝒔𝒉 𝒑𝒓𝒂𝒕𝒂𝒑 𝒔𝒊𝒏𝒈𝒉
+      𝒇𝒐𝒍𝒍𝒐𝒘 𝑵𝒊𝒔𝒉𝒌𝒂𝒓𝒔𝒉 𝒑𝒓𝒂𝒕𝒂𝒑 𝒔𝒊𝒏𝒈𝒉
     </a>
     <a href="https://instagram.com/aushik" class="instagram-button">
       <img src="Screenshot_2024-12-16-02-09-48-77_1c337646f29875672b5a61192b9010f9.jpg" alt="Instagram Logo">
-     𝒇𝒐𝒍𝒍𝒐𝒘 𝑨𝒓𝒉𝒂𝒏𝒕 𝒔𝒊𝒏𝒈𝒉
-
-
+      𝒇𝒐𝒍𝒍𝒐𝒘 𝑨𝒓𝒉𝒂𝒏𝒕 𝒔𝒊𝒏𝒈𝒉
     </a>
-         𝑾𝑨𝑻𝑪𝑯 𝑳𝑰𝑽𝑬 𝑴𝑨𝑻𝑪𝑯 𝑭𝑹𝑬𝑬 𝑶𝑵 𝑻𝑬𝑳𝑬𝑮𝑹𝑨𝑴 𝑱𝑶𝑰𝑵 𝑵𝑶𝑾
+    𝑾𝑨𝑻𝑪𝑯 𝑳𝑰𝑽𝑬 𝑴𝑨𝑻𝑪𝑯 𝑭𝑹𝑬𝑬 𝑶𝑵 𝑻𝑬𝑳𝑬𝑮𝑹𝑨𝑴 𝑱𝑶𝑰𝑵 𝑵𝑶𝑾
     <a href="https://t.me/+IXCKFIL7DE80MDc9" class="telegram-link">Join Telegram</a>
   </div>
 </body>
